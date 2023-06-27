@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </head>
+  <style>
+    body{
+      background-color:beige;
+      text-align: center;
+      color: black;
+      border-bottom: 500px;
+    }
+  </style>
+  <body>
+    <div id="d1" >
+ Name <input id="n1" type="text" name=""> 
+    </br>
+ Course <input type="text" name="">   
+ </div>
+ <button id="b1">submit</button>
+
+ <div>
+  <h3 id="h1" style="display: none;">CERTIFICATE  OF APPRECIATION</h3>
+  <h4 id="h2" style="display: none;"> PROUDLY PRESENT TO </h4>
+  <h1 id="p" ></h1>
+ <p style="display: none;" id="h3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, aperiam minima eaque quisquam, odit dicta quo laborum aspernatur, sit eius inventore commodi placeat itaque rerum voluptatem! Quasi facilis minima voluptas?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi obcaecati mollitia repellat sit eaque quod neque, nam impedit animi, quis repudiandae ullam voluptas debitis maiores soluta sequi aliquid iure corporis?Lo
+</p>
+ </div>
+    <script>
+      $(document).ready(function(){
+        $("#b1").click(function(){
+          $("#d1").hide(3000);
+          $("#b1").hide(3000);
+          $("#h1,#h2,#h3").show(3000);
+          var t=$("#n1").val();
+          document.getElementById('p').innerText=t;
+        })
+      })
+    </script>
+  </body>
+</html>
